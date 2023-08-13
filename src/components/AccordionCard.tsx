@@ -22,7 +22,7 @@ export const AccordionCard: React.FC<AccordionCardProps> = ({
       >
         <div className="pb-3">
           <h2 className="text-lg text-gray-900 font-bold">{title}</h2>
-          {subtitle && <p className="text-sm text-grey-700">{subtitle}</p>}{" "}
+          {subtitle && <p className="text-sm text-gray-600">{subtitle}</p>}{" "}
         </div>
         <div>{isOpen ? <FaChevronUp /> : <FaChevronDown />}</div>
       </div>

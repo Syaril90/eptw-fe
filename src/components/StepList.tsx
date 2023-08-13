@@ -9,7 +9,7 @@ export interface StepItem {
 export const StepsList: React.FC<{ steps: StepItem[] }> = ({ steps }) => {
   return (
     <ol
-      className={`relative text-gray-500 border-l dark:border-gray-700 dark:text-gray-400`}
+      className={`relative text-black border-l dark:border-gray-700 dark:text-gray-400`}
     >
       {steps.map((step, index) => (
         <li className="flex items-center mb-10 ml-6" key={index}>
@@ -22,7 +22,7 @@ export const StepsList: React.FC<{ steps: StepItem[] }> = ({ steps }) => {
               {index + 1}
             </span>
           </span>
-          <h3 className="font-medium leading-tight">{step.title}</h3>
+          <h3 className="text-black font-normal leading-tight">{step.title}</h3>
           {step.details && <p className="text-sm">{step.details}</p>}{" "}
           {/* Conditionally render details */}
         </li>

@@ -52,16 +52,20 @@ function App() {
         <section className="bg-white p-4">
           <LeftNav items={leftNavItems} />
         </section>
-        <section className="flex-grow p-4">
+        <div className="flex-grow p-6">
           <Breadcrumb items={breadcrumbItems} />
-          <h1 className="my-6 text-2xl font-bold">Permit To Work</h1>
-          <AccordionCard title="Accordion Title" subtitle="Accordion Subtitle">
-            <h1>hsdkjfkds</h1>
-          </AccordionCard>
-        </section>
-        <section className="p-4">
-          <StepsList steps={steps} />
-        </section>
+          <div className="flex flex-grow">
+            <section className="flex-grow p-5">
+              <h1 className="my-6 text-2xl font-bold">Permit To Work</h1>
+              <AccordionCard title="Summary" subtitle="PTW 230911001">
+                <h1>hsdkjfkds</h1>
+              </AccordionCard>
+            </section>
+            <section className="p-4 w-64 whitespace-normal">
+              <StepsList steps={steps} />
+            </section>
+          </div>
+        </div>
       </main>
     </div>
   );
